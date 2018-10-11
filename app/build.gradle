@@ -27,9 +27,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    //数据库
+    //GreenDao数据库
     implementation 'org.greenrobot:greendao:3.2.0'
     implementation 'org.greenrobot:greendao-generator:3.2.2'
-
+    //数据库调试
     implementation 'com.facebook.stetho:stetho:1.5.0'
+    //litepal 数据库
+    implementation 'org.litepal.android:java:3.0.0'
 }

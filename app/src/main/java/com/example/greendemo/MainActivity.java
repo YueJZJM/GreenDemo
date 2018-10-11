@@ -1,5 +1,7 @@
 package com.example.greendemo;
 
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +10,8 @@ import android.widget.Button;
 
 import com.example.greendemo.database.DataBaseManager;
 import com.example.greendemo.database.Person;
+
+import org.litepal.tablemanager.Connector;
 
 import java.util.List;
 import java.util.Random;
@@ -18,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mInsertButton;
     private Button mQueryButton;
     private Button mDeleteButton;
+    private Button mLitePalButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,10 +32,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mDeleteButton = findViewById(R.id.delete_button);
         mInsertButton = findViewById(R.id.insert_button);
         mQueryButton = findViewById(R.id.query_button);
+        mLitePalButton = findViewById(R.id.litepal_button);
 
         mDeleteButton.setOnClickListener(this);
         mInsertButton.setOnClickListener(this);
         mQueryButton.setOnClickListener(this);
+        mLitePalButton.setOnClickListener(this);
+
 
     }
 
@@ -45,6 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.insert_button:
                 insert();
+                break;
+            case R.id.litepal_button:
+                Intent intent = new Intent(MainActivity.this, LitePalActivity.class);
+                startActivity(intent);
                 break;
             default:
                 break;

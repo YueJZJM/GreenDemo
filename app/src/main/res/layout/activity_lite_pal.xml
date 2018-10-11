@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LitePalActivity">
 
     <Button
-    android:id="@+id/insert_button"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="插入数据"/>
+        android:id="@+id/insert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入数据"/>
 
     <Button
         android:id="@+id/delete_button"
@@ -19,16 +19,5 @@
         android:layout_height="wrap_content"
         android:text="删除数据"/>
 
-    <Button
-        android:id="@+id/query_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="查询数据"/>
-
-    <Button
-        android:id="@+id/litepal_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="litepal 数据库"/>
 
 </LinearLayout>
