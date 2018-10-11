@@ -27,8 +27,16 @@
 
     <Button
         android:id="@+id/litepal_button"
+        android:textAllCaps="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="litepal 数据库"/>
+
+    <Button
+        android:id="@+id/realm_button"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Realm 数据库"/>
 
 </LinearLayout>

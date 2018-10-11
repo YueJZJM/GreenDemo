@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mQueryButton;
     private Button mDeleteButton;
     private Button mLitePalButton;
+    private Button mRealmButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +34,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mInsertButton = findViewById(R.id.insert_button);
         mQueryButton = findViewById(R.id.query_button);
         mLitePalButton = findViewById(R.id.litepal_button);
+        mRealmButton = findViewById(R.id.realm_button);
 
         mDeleteButton.setOnClickListener(this);
         mInsertButton.setOnClickListener(this);
         mQueryButton.setOnClickListener(this);
         mLitePalButton.setOnClickListener(this);
+        mRealmButton.setOnClickListener(this);
 
 
     }
@@ -57,6 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.litepal_button:
                 Intent intent = new Intent(MainActivity.this, LitePalActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.realm_button:
+                Intent intent1 = new Intent(MainActivity.this, RealmActivity.class);
+                startActivity(intent1);
                 break;
             default:
                 break;

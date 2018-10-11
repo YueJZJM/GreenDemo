@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 //数据库
 apply plugin: 'org.greenrobot.greendao'
+
+apply plugin: 'realm-android'
 android {
     compileSdkVersion 28
     defaultConfig {
