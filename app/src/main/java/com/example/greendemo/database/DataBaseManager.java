@@ -27,7 +27,7 @@ public class DataBaseManager {
 
     private void initDao(Context context) {
         try {
-            final ReleaseOpenHelper helper = new ReleaseOpenHelper(context,"fast_ec.ab");
+            final ReleaseOpenHelper helper = new ReleaseOpenHelper(context,"greendao.ab");
             final Database db = helper.getWritableDb();
             mDaoSession = new DaoMaster(db).newSession();
             mPersonDao = mDaoSession.getPersonDao();

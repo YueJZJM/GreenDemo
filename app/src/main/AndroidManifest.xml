@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LitePalActivity" />
-        <activity android:name=".RealmActivity"></activity>
+        <activity android:name=".RealmActivity" />
+        <activity android:name=".GreenDaoActivity"></activity>
     </application>
 
 </manifest>

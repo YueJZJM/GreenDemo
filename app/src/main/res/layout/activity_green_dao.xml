@@ -7,33 +7,24 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <Button
-        android:id="@+id/greendao_button"
-        android:textAllCaps="false"
+        android:id="@+id/greendao_insert_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Greendao 数据库"/>
+        android:text="插入数据"/>
 
     <Button
-        android:id="@+id/litepal_button"
-        android:textAllCaps="false"
+        android:id="@+id/greendao_delete_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Litepal 数据库"/>
+        android:text="删除数据"/>
 
     <Button
-        android:id="@+id/realm_button"
-        android:textAllCaps="false"
+        android:id="@+id/greendao_query_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Realm 数据库"/>
+        android:text="查询数据"/>
 
-    <Button
-        android:id="@+id/sqlite_button"
-        android:textAllCaps="false"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="原生数据库"/>
+
 
 </LinearLayout>
