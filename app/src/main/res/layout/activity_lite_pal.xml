@@ -20,4 +20,11 @@
         android:text="删除数据"/>
 
 
+    <Button
+        android:id="@+id/insert_sync_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="异步插入数据"/>
+
+
 </LinearLayout>

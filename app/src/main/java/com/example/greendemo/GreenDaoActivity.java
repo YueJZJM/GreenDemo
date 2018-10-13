@@ -31,7 +31,7 @@ public class GreenDaoActivity extends AppCompatActivity implements View.OnClickL
         mDeleteButton.setOnClickListener(this);
         mInsertButton.setOnClickListener(this);
         mQueryButton.setOnClickListener(this);
-        Log.d("GreenDao----------->","GreenDaoActivity");
+      //  Log.d("GreenDao----------->","GreenDaoActivity");
     }
 
     @Override
